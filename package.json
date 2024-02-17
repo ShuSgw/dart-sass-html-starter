@@ -1,0 +1,14 @@
+{
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "scripts": {
+    "compile": "sass sass/index.scss style.css",
+    "watch": "npm run compile && sass sass/index.scss style.css --watch"
+  },
+  "devDependencies": {
+    "sass": "^1.43.2"
+  },
+  "dependencies": {
+    "all": "^0.0.0"
+  }
+}

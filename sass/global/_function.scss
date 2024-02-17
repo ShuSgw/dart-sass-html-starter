@@ -1,0 +1,15 @@
+/************************************************************
+*  Global
+*  関数を定義
+*************************************************************/
+@use 'variable' as *;
+
+// clampのショートカット
+@function clp($min, $vw, $max) {
+  @return clamp($min, calc(calc($vw / 375) * 100vw), $max);
+}
+
+// SP時のvwの設定
+@function cl($vw, $window_w: 375) {
+  @return calc(calc($vw / $window_w) * 100vw);
+}

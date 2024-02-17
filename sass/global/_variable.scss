@@ -1,0 +1,97 @@
+/*
+#overview
+カラーパレット
+*/
+
+/*
+#colors
+
+@$mainWhiteBlue #f5f6fc
+@$mainLightBlue #d5dffe
+@$mainBlue #859be3
+@$mainDarkBlue #5268b1
+
+@$accentRed #ff4b4b
+
+@$txtBlack #000
+@$txtBlack2 #333333
+
+@$borderGray #cccccc
+*/
+
+// Color Code
+$baseWhite: #fff;
+
+$mainWhiteBlue: #f5f6fc;
+$mainLightBlue: #d5dffe;
+$mainBlue: #859be3;
+$mainDarkBlue: #5268b1;
+
+$accentRed: #ff4b4b;
+
+$txtBlack: #000;
+$txtBlack2: #333333;
+
+$borderGray: #cccccc;
+
+// font-family
+$ff-yugoshic:
+  游ゴシック medium,
+  yu gothic medium,
+  游ゴシック,
+  yu gothic,
+  メイリオ,
+  meiryo,
+  ヒラギノ角ゴ pro,
+  hiragino kaku gothic pro,
+  sans-serif;
+$ff-yugoshic-bold: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic",
+  "メイリオ", sans-serif;
+$ff-yumincho: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+
+// breakpoint
+$bp_sp: 640px;
+$bp_tab: 1024px;
+$bp_smpc: 1140px;
+
+$breakpoints: (
+  smpc: $bp_smpc,
+  tab: $bp_tab,
+  sp: $bp_sp
+);
+
+$bp1300: 1300px;
+$bp1140: 1140px;
+$bp1100: 1100px;
+$bp900: 900px;
+$bp780: 780px;
+$bp767: 767px;
+
+// メディアクエリの順番を定義
+// TODO:メディアクエリの順番を定義せずに並び替えたい
+body {
+  @media screen and (max-width: $bp1300) {
+    margin: 0;
+  }
+  @media screen and (max-width: $bp1140) {
+    margin: 0;
+  }
+  @media screen and (max-width: $bp1100) {
+    margin: 0;
+  }
+  @media screen and (max-width: $bp900) {
+    margin: 0;
+  }
+  @media screen and (max-width: $bp_tab) {
+    margin: 0;
+  }
+  @media screen and (max-width: $bp780) {
+    margin: 0;
+  }
+  @media screen and (max-width: $bp767) {
+    margin: 0;
+  }
+  @media screen and (max-width: $bp_sp) {
+    margin: 0;
+  }
+}
